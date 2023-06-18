@@ -25,8 +25,7 @@ pipeline {
             steps {
                // update your tomcat server ip accordingly in below command
 		    echo "deploying on tomcat server"
-	       sh "sudo -s"
-               sh "cp /var/lib/jenkins/workspace/deployment/target/maven-web-application.war /opt/tomcat9/webapps/"
+               sh "cp -r /var/lib/jenkins/workspace/deployment/target/maven-web-application.war /opt/tomcat9/webapps/"
                     
             }
         }
