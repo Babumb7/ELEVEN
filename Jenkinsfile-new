@@ -23,10 +23,7 @@ pipeline {
         stage ('deploy') {
 
             steps {
-               // update your tomcat server ip accordingly in below command
-		    echo "deploying on tomcat server"
 		sshagent(['Pip']) {
-                
 		sh "scp -o StrictHostkeyChecking=no  target/maven-web-application.war ec2-user@13.233.167.112:/opt/tomcat9/webapps"
                     }
             }
