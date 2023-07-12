@@ -7,7 +7,7 @@ pipeline {
     dockerimagename = "mohan7000/mohanpv:latest"
     registry_name = "registry.hub.docker.com"
     registry_url = "https://registry.hub.docker.com"
-    registryCredential = 'my-docker-private-id'
+    registryCredential = 'Dockerhub'
     container_name= "mohan7000-mohanpv"
 	  
     }    
