@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    dockerimagename = "mohan7000/mohanpv"
+    dockerimagename = "mohan7000/edevopsimg:latest"
     registry_url = "https://registry.hub.docker.com"
     registryCredential = 'Dockerhub'
     }
