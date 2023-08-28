@@ -1,6 +1,6 @@
 pipeline {
    agent {
-       label 'slave1'
+       label 'slave2'
     }
     
     environment {
@@ -41,7 +41,7 @@ pipeline {
            image = docker.image(dockerimagename)
            image.pull()
            }
-           sh 'docker run -d -p 9898:9898 --rm --name $container_name  $registry_name/$dockerimagename'
+           sh 'docker run -d -p 9797:9797 --rm --name $container_name  $registry_name/$dockerimagename'
            
          }  
 
