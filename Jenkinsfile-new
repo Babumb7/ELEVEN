@@ -24,7 +24,7 @@ pipeline {
 
             steps {
 		sshagent(['ssh']) {
-		sh "scp -o target/maven-web-application.war ec2-user@54.242.212.92:/opt/tomcat9/webapps"
+		sh "scp -o target/maven-web-application.war /opt/tomcat9/webapps"
                     }
             }
         }
