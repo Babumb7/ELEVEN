@@ -4,11 +4,11 @@ pipeline {
     }
     
     environment {
-    dockerimagename = "edevopsimg:latest"
+    dockerimagename = "babu11:latest"
     registry_name = "registry.hub.docker.com"
     registry_url = "https://registry.hub.docker.com"
-    registryCredential = 'Dockerhub'
-    container_name= "mohan7000-mohanpv"
+    registryCredential = 'Docker'
+    container_name= "mohan7000-ElevendevopsCont"
 	  
     }    
 
